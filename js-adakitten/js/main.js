@@ -67,3 +67,48 @@ const kittenThree=`<li class="card">
 listElement.innerHTML=kittenOne+kittenTwo+kittenThree;
 
 // Funcionó, pero han desaparecifo los estilos.
+
+
+// 5. TRABAJAR CON VARIABLES E INTERPOLARLAS
+
+// En tu fichero main.js crea las variables necesarias para almacenar la información de cada gatito (recuerda que tenemos tres gatitos de momento):
+// Una variable para la URL de la foto.
+// Una variable para el nombre.
+// Una variable para la descripción.
+// Una variable para la raza.
+
+const kittenOneImage = 'https://ychef.files.bbci.co.uk/976x549/p07ryyyj.jpg';
+const kittenOneName = 'Anastacio';
+const kittenOneDesc ='Ruiseño, juguetón, le guta estar tranquilo y que nadie le moleste. Es una maravilla acariciarle!';
+
+const kittenTwoImage='https://images.emedicinehealth.com/images/article/main_image/cat-scratch-disease.jpg';
+const kittenTwoName='Fiona';
+const kittenTwoDesc='Ruiseño, juguetón, le guta estar tranquilo y que nadie le moleste. Es una maravilla acariciarle!';
+
+
+const kittenThreeImage='https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/newscms/2019_39/3021711/190923-cat-pet-stock-cs-1052a.jpg';
+const kittenThreeName='Cielo';
+const kittenThreeDesc='Ruiseño, juguetón, le guta estar tranquilo y que nadie le moleste. Es una maravilla acariciarle!';
+
+
+console.log(`<li class="card"> <article>
+  <img class="card_img" src=${kittenOneImage}/>
+  <h3 class="card_title">${kittenOneName}</h3>
+  <p class="card_description"> ${kittenOneDesc}</p>
+</article></li>`);
+
+console.log(`<li class="card"> <article>
+  <img class="card_img" src=${kittenTwoImage}/>
+  <h3 class="card_title">${kittenTwoName}</h3>
+  <p class="card_description"> ${kittenTwoDesc}</p>
+</article></li>`);
+
+console.log(`<li class="card"> <article>
+  <img class="card_img" src=${kittenThreeImage}/>
+  <h3 class="card_title">${kittenThreeName}</h3>
+  <p class="card_description"> ${kittenThreeDesc}</p>
+</article></li>`);
+
+// ¿Serías capaz de buscar métodos de string para pasar a mayúsculas el nombre de los gatitos que está en la variable kittenName?
+console.log(kittenOne.toUpperCase());
+
